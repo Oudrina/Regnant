@@ -1,0 +1,929 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="homepage.css">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+   <script src="script.js" defer></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+   <title>Homepage</title>
+</head>
+<body>
+ <header class="homepage-header">
+   <img src="images/logo iii.png" alt="Regnant Properties">
+  
+   <button class="btn">Buy now</button>
+</header>
+
+<main class="main-class">
+
+<!-- <nav class="homepage-nav">
+
+ <div class="nav-logo">
+    <img src="images/logo iii.png" alt="Regnant Properties">
+    <h4>Regnant Properties</h4>
+    </div>
+    
+  
+
+
+   <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Properties</a></li>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Contact</a></li>
+    </ul>
+
+  
+
+     <div class="nav-buttons">
+    <div class="call-us"> 
+     <i class='bx bx-phone-call'></i>
+        Call-us :(+233) 20 925 4863 
+    </div>
+
+    <div class="Get-in-touch">
+    Get In Touch <i class="fa-solid fa-arrow-up-right-from-square"></i>
+    </div>
+   </div>
+
+
+</nav> -->
+
+<nav class="homepage-nav">
+
+    <!-- Logo -->
+    <div class="nav-logo">
+        <img src="images/logo iii.png" alt="Regnant Properties">
+        <h4>Regnant Properties</h4>
+    </div>
+
+    <!-- Nav Links (hidden on mobile) -->
+    <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Properties</a></li>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Contact</a></li>
+    </ul>
+
+    <!-- Buttons (hidden on mobile) -->
+    <div class="nav-buttons">
+        <div class="call-us">
+            <i class='bx bx-phone-call'></i>
+            Call-us: (+233) 20 925 4863
+        </div>
+        <div class="Get-in-touch">
+            Get In Touch <i class="fa-solid fa-arrow-up-right-from-square"></i>
+        </div>
+    </div>
+
+    <!-- Hamburger (visible on mobile only) -->
+    <div class="hamburger" onclick="toggleMenu()" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+
+    <!-- Mobile Dropdown Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <a href="#">Home</a>
+        <a href="#">Properties</a>
+        <a href="#">About Us</a>
+        <a href="#">Contact</a>
+        <div class="mobile-buttons">
+            <div class="call-us">
+                <i class='bx bx-phone-call'></i>
+                (+233) 20 925 4863
+            </div>
+            <div class="Get-in-touch">
+                Get In Touch <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </div>
+        </div>
+    </div>
+
+</nav>
+<section class="hero">
+
+    <div class="hero-content animate" data-dir="right">
+        <div class="hero-tag">
+    <span class="green-square"></span>
+    Modern Homes For Modern Life
+</div>
+        <h1>Build your <br> dream home</h1>
+           <div class="hero-description-sub-div">
+            <div class="vidoe"></div>
+
+            <div class="description">
+                <p>Explore homes, offices, and rentals with ease. We connects you with properties that match your lifestyle and needs.</p>
+            </div>
+    </div>
+
+     </div>
+    <div class="arrow-icon">
+         ↗
+    </div>
+
+
+</section>
+
+<div class="locationandp">
+
+    <div class="location">
+        <p>Email us  : info@regnantproperties.com</p>
+    </div>
+
+<div class="properties">
+    <p class="count-number" data-target="200">0</p>
+    <p>Properties</p>
+</div>
+
+</div>
+</main>
+
+
+<!-- About header and grid -->
+<div class="about-header-about-grid">
+
+
+<section class="about-header">
+
+    <div class="about-left animate" data-dir="right">
+        <div class="section-tag">
+            <span class="green-square"></span>
+            About The Property
+        </div>
+        <h2>Innovating Property <br> Solutions Together</h2>
+    </div>
+
+    <div class="about-right animate" data-dir="left">
+        <a href="#" class="more-btn">
+            More About Us <i class="fa-solid fa-arrow-up-right"></i>
+        </a>
+    </div>
+
+</section>
+
+
+
+<section class="about-grid animate" data-dir="up">
+
+    <div class="about-col">
+
+        <div class="about-top">
+
+          <i class="fa-regular fa-building"></i>
+
+            <div class="about-icon">
+            <h3>Our Mission</h3>
+             <p>Deliver trusted real estate solutions focused on client success, innovation, and sustainable growth.</p>
+
+            </div>
+            
+        </div>
+
+
+        <div class="about-img">
+            <img src="https://placehold.co/370x300" alt="Our Mission">
+        </div>
+    </div>
+
+    <!-- Column 2 -->
+    <div class="about-col">
+        <div class="about-top">
+
+            <i class="fa-regular fa-circle-check"></i>
+            <div class="about-icon">
+            <h3>Our Vision</h3>
+            <p>Redefine modern living through innovation, quality, and meaningful property experiences.</p>
+         </div>
+        </div>
+        <div class="about-img">
+            <img src="https://placehold.co/370x300" alt="Our Vision">
+        </div>
+    </div>
+
+    <!-- Column 3 -->
+    <div class="about-col">
+        <div class="about-top">
+            <i class="fa-regular fa-gem"></i>
+             <div class="about-icon">
+
+            <h3>Our Value</h3>
+            <p>Uphold integrity, professionalism, and dedication in every service to exceed client expectations.</p>
+             </div>
+        </div>
+        <div class="about-img">
+            <img src="https://placehold.co/370x300" alt="Our Value">
+        </div>
+    </div>
+
+</section>
+
+</div>
+
+
+
+<!-- Stats Section -->
+<section class="stats-section">
+
+   <div class="stats-background">
+    <div class="stats-overlay"></div>
+
+
+    
+    <div class="stats-grid">
+
+        <!-- Stat 1 -->
+        <div class="stat-card">
+            <div class="stat-tag">
+                <span class="green-dot"></span>
+                Property Deliver
+            </div>
+              <hr>
+
+            <p class="count-number" data-target="985" data-suffix="+">0</p>
+        </div>
+
+        <!-- Stat 2 -->
+        <div class="stat-card">
+            <div class="stat-tag">
+                <span class="green-dot"></span>
+                Total Agents
+            </div>
+
+            <hr>
+            <p class="count-number" data-target="90" data-suffix="+">0</p>
+        </div>
+
+        <!-- Stat 3 -->
+        <div class="stat-card">
+            <div class="stat-tag">
+                <span class="green-dot"></span>
+                Happy Clients
+            </div>
+            <hr>
+            <p class="count-number" data-target="65" data-suffix="K+">0</p>
+        </div>
+
+    </div>
+    
+ 
+    <div class="projects-header animate" data-dir="right">
+    <div class="header-left">
+        <div class="section-tag">
+            <span class="green-square"></span>
+            Highlighted Real Projects
+        </div>
+        <h2>Discover Our Ongoing <br> Developments</h2>
+    </div>
+
+    
+    <a href="#" class="more-btn animate" data-dir="left">
+        View All Projects <i class="fa-solid fa-arrow-up-right-from-square"></i>
+    </a>
+</div>
+
+<hr>
+
+<div class="project-item active animate" data-dir="up">
+
+    <!-- Project Row Header -->
+    <div class="project-row">
+        <div class="project-left">
+            <span class="project-num">/ 01 /</span>
+            <h3 class="active-title">The Palm Residence</h3>
+        </div>
+        <p class=' project-arrow'>↗</p>
+    </div>
+
+    <!-- Expanded Content -->
+    <div class="project-expanded">
+
+        <!-- Left: Details Card -->
+        <div class="project-details">
+            <p class="project-location">
+                <i class="fa-solid fa-circle green-dot-icon"></i>
+                Chicago, Illinois
+            </p>
+            <p class="project-desc">
+                A serene modern home surrounded by lush gardens, 
+                combining natural beauty with elegant design for a truly 
+                peaceful living experience.
+            </p>
+            <div class="project-features">
+                <p><strong>Property Features:</strong></p>
+                <ul>
+                    <li><i class="fa-solid fa-circle-dot"></i> New Windows</li>
+                    <li><i class="fa-solid fa-circle-dot"></i> Open Concept Living</li>
+                    <li><i class="fa-solid fa-circle-dot"></i> Smart Home Integration</li>
+                    <li><i class="fa-solid fa-circle-dot"></i> Flooring Update</li>
+                </ul>
+            </div>
+            <div class="project-footer">
+                <span class="project-price">$400k – $1.2M</span>
+                <a href="#" class="learn-more">
+                    Learn More <i class="fa-solid fa-arrow-right"></i>
+                </a>
+            </div>
+        </div>
+
+        <!-- Right: Image -->
+        <div class="project-img">
+            <img src="https://placehold.co/500x320" alt="The Palm Residence">
+        </div>
+
+    </div>
+
+</div>
+
+<div class="project-item active">
+
+    <!-- Project Row Header -->
+    <div class="project-row">
+        <div class="project-left">
+            <span class="project-num">/ 02 /</span>
+            <h3 class="active-title">The Palm Residence</h3>
+        </div>
+        <p class=' project-arrow'>↗</p>
+
+    </div>
+
+    <!-- Expanded Content -->
+    <div class="project-expanded">
+
+        <!-- Left: Details Card -->
+        <div class="project-details">
+            <p class="project-location">
+                <i class="fa-solid fa-circle green-dot-icon"></i>
+                Chicago, Illinois
+            </p>
+            <p class="project-desc">
+                A serene modern home surrounded by lush gardens, 
+                combining natural beauty with elegant design for a truly 
+                peaceful living experience.
+            </p>
+            <div class="project-features">
+                <p><strong>Property Features:</strong></p>
+                <ul>
+                    <li><i class="fa-solid fa-circle-dot"></i> New Windows</li>
+                    <li><i class="fa-solid fa-circle-dot"></i> Open Concept Living</li>
+                    <li><i class="fa-solid fa-circle-dot"></i> Smart Home Integration</li>
+                    <li><i class="fa-solid fa-circle-dot"></i> Flooring Update</li>
+                </ul>
+            </div>
+            <div class="project-footer">
+                <span class="project-price">$400k – $1.2M</span>
+                <a href="#" class="learn-more">
+                    Learn More <i class="fa-solid fa-arrow-right"></i>
+                </a>
+           
+            </div>
+        </div>
+
+        <!-- Right: Image -->
+        <div class="project-img">
+            <img src="https://placehold.co/500x320" alt="The Palm Residence">
+        </div>
+
+    </div>
+</div>
+
+</div>
+</section>
+
+
+<section class="why-section">
+
+    <!-- Header -->
+    <div class="why-header">
+        <div class="why-header-left animate" data-dir="right">
+            <div class="section-tag">
+                <span class="green-square"></span>
+                Why Choose Us
+            </div>
+            <h2>Get More Value Out Of <br> Your Properties</h2>
+        </div>
+        <a href="#" class="more-btn animate" data-dir="left">
+            Join Us Now <i class="fa-solid fa-arrow-up-right-from-square"></i>
+        </a>
+    </div>
+
+    <!-- Body -->
+    <div class="why-body animate" data-dir="up">
+
+        <!-- Left Image -->
+        <div class="why-img">
+            <img src="https://placehold.co/500x520" alt="Property">
+        </div>
+
+        <!-- Right Features -->
+        <div class="why-features">
+
+            <div class="feature-item">
+                <div class="feature-icon">
+                    <i class="fa-regular fa-building"></i>
+                </div>
+                <div class="feature-text">
+                    <h4>Trusted Experts</h4>
+                    <p>We understand energy isn't your primary business. As your advocate and consultant, we'll help you craft the best solutions.</p>
+                </div>
+            </div>
+
+            <div class="feature-item">
+                <div class="feature-icon">
+                    <i class="fa-regular fa-eye"></i>
+                </div>
+                <div class="feature-text">
+                    <h4>Long Term Vision</h4>
+                    <p>Long lasting energy infrastructure demands a long term partner. We provide full service full lifecycle support.</p>
+                </div>
+            </div>
+
+            <div class="feature-item">
+                <div class="feature-icon">
+                    <i class="fa-regular fa-handshake"></i>
+                </div>
+                <div class="feature-text">
+                    <h4>Relationship Focused</h4>
+                    <p>We're focused on delivering a transparent, industry leading client experience. Success for us means success for you.</p>
+                </div>
+            </div>
+
+            <div class="feature-item">
+                <div class="feature-icon">
+                    <i class="fa-regular fa-lightbulb"></i>
+                </div>
+                <div class="feature-text">
+                    <h4>Outcome Oriented</h4>
+                    <p>Maximizing your value capture requires that we sweat the details. We're myopically focused on your outcomes.</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+<section class="values-section">
+
+    <!-- Header -->
+    <div class="values-header animate" data-dir="right">
+        <div class="values-left">
+            <div class="section-tag">
+                <span class="green-square"></span>
+                Property Values
+            </div>
+            <h2>Discover Accurate <br> Real Estate Values</h2>
+        </div>
+
+        <!-- Tabs -->
+        <div class="values-tabs animate" data-dir="left">
+            <button class="tab-btn active">
+                Perfect Location
+            </button>
+            <button class="tab-btn">
+                Smart Homes
+            </button>
+            <button class="tab-btn">
+                Eco Construction
+            </button>
+        </div>
+    </div>
+
+    <!-- Tab Panels -->
+
+    <!-- Perfect Location -->
+    <div class="tab-panel active" id="perfect-location animate" data-dir="up">
+
+        <div class="values-img-wrap animate" data-dir="up"> 
+            <img src="https://placehold.co/1000x500" alt="Perfect Location">
+             <div class="values-card animate" data-dir="up"> 
+                <i class="fa-solid fa-location-dot card-icon"></i>
+                <h3>Perfect Location</h3>
+                <p>Enjoy the benefits of a perfect location with great accessibility, modern amenities, and a vibrant community that enhances everyday living.</p>
+                <a href="#" class="card-link">
+                    Join Us Now <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </a>
+            </div> 
+        </div> 
+    </div>
+
+
+
+</section>
+
+<section class="testimonial-section">
+
+    <!-- Left Side -->
+    <div class="testimonial-left animate" data-dir="right">
+        <div class="section-tag">
+            <span class="green-square"></span>
+            Highly Satisfied Clients
+        </div>
+        <div class="rating-score">4.9/5</div>
+        <div class="stars">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+        </div>
+        <p class="rating-label">4.9/5 based on 2,500+ reviews</p>
+    </div>
+
+    <!-- Divider -->
+    <div class="testimonial-divider"></div>
+
+    <!-- Right Side -->
+    <div class="testimonial-right animate" data-dir="left">
+
+        <!-- Slides -->
+        <div class="testimonial-slider">
+
+            <!-- Slide 1 -->
+            <div class="testimonial-slide active">
+                <i class="fa-solid fa-quote-left quote-icon"></i>
+                <p class="quote-text">Innovative strategy and stunning execution transformed our brand. Highly impressed with the results and the seamless, professional partnership throughout.</p>
+                <div class="testimonial-author">
+                    <img src="https://placehold.co/50x50" alt="Sarah Mandella">
+                    <div>
+                        <h4>Sarah Mandella</h4>
+                        <span>Supervisor</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 2 -->
+            <div class="testimonial-slide">
+                <i class="fa-solid fa-quote-left quote-icon"></i>
+                <p class="quote-text">Working with this team was a game changer. Their deep understanding of the real estate market and attention to detail made the entire process smooth and rewarding.</p>
+                <div class="testimonial-author">
+                    <img src="https://placehold.co/50x50" alt="James Owusu">
+                    <div>
+                        <h4>James Owusu</h4>
+                        <span>Property Investor</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 3 -->
+            <div class="testimonial-slide">
+                <i class="fa-solid fa-quote-left quote-icon"></i>
+                <p class="quote-text">Exceptional service from start to finish. They found us our dream home within weeks and handled everything professionally. Could not recommend them more highly.</p>
+                <div class="testimonial-author">
+                    <img src="https://placehold.co/50x50" alt="Linda Mensah">
+                    <div>
+                        <h4>Linda Mensah</h4>
+                        <span>Home Buyer</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Navigation Arrows -->
+        <div class="testimonial-nav">
+            <button class="nav-arrow prev" onclick="changeSlide(-1)">
+                <i class="fa-solid fa-arrow-left"></i>
+            </button>
+            <button class="nav-arrow next" onclick="changeSlide(1)">
+                <i class="fa-solid fa-arrow-right"></i>
+            </button>
+        </div>
+
+    </div>
+</section>
+
+
+<section class="team-section">
+
+    <!-- Header -->
+    <div class="team-header animate" data-dir="right">
+        <div class="team-header-left">
+            <div class="section-tag">
+                <span class="green-square"></span>
+                Professional Team
+            </div>
+            <h2>Your Property, Our <br> Professional Team</h2>
+        </div>
+        <a href="#" class="more-btn animate" data-dir="left">
+            Meet Our Team <i class="fa-solid fa-arrow-up-right-from-square"></i>
+        </a>
+    </div>
+
+    <!-- Slider Wrapper -->
+    <div class="team-slider-wrapper animate" data-dir="up">
+        <div class="team-slider" id="teamSlider">
+
+            <div class="team-card " >
+                <img src="https://placehold.co/400x520" alt="Mira Thompson">
+                <div class="team-info">
+                    <h3>Mira Thompson</h3>
+                    <span>CEO & Founder</span>
+                </div>
+            </div>
+
+            <div class="team-card">
+                <img src="https://placehold.co/400x520" alt="Katy Hator">
+                <div class="team-info">
+                    <h3>Katy Hator</h3>
+                    <span>Executive Assistant</span>
+                </div>
+            </div>
+
+            <div class="team-card">
+                <img src="https://placehold.co/400x520" alt="Oliver Black">
+                <div class="team-info">
+                    <h3>Oliver Black</h3>
+                    <span>Director of Architecture</span>
+                </div>
+            </div>
+
+            <div class="team-card">
+                <img src="https://placehold.co/400x520" alt="Anna Reed">
+                <div class="team-info">
+                    <h3>Anna Reed</h3>
+                    <span>Interior Designer</span>
+                </div>
+            </div>
+
+            <div class="team-card">
+                <img src="https://placehold.co/400x520" alt="Chris Stone">
+                <div class="team-info">
+                    <h3>Chris Stone</h3>
+                    <span>Sales Manager</span>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Arrows -->
+        <button class="slider-arrow prev-arrow" onclick="slideTeam(-1)">
+            <i class="fa-solid fa-arrow-left"></i>
+        </button>
+        <button class="slider-arrow next-arrow" onclick="slideTeam(1)">
+            <i class="fa-solid fa-arrow-right"></i>
+        </button>
+    </div>
+
+</section>
+
+<section class="insights-section">
+
+    <!-- Header -->
+    <div class="insights-header">
+        <div class="insights-left animate" data-dir="right">
+            <div class="section-tag">
+                <span class="green-square"></span>
+                News & Insights
+            </div>
+            <h2>Discover Our Latest <br> Insight Articles</h2>
+        </div>
+        <a href="#" class="more-btn animate" data-dir="left">
+            View All Posts <i class="fa-solid fa-arrow-up-right-from-square"></i>
+        </a>
+    </div>
+
+    <!-- Articles Grid -->
+    <div class="insights-grid animate" data-dir="up">
+
+        <!-- Article 1 -->
+        <article class="insight-card">
+            <div class="insight-img">
+                <img src="https://placehold.co/400x260" alt="Article 1">
+            </div>
+            <div class="insight-meta">
+                <span class="insight-tag">
+                    <span class="green-dot"></span>
+                    Investment Advice
+                </span>
+                <span class="insight-date">December 1, 2025</span>
+            </div>
+            <h3>Which Agency Offers The Best Inbound Marketing Services for Growth?</h3>
+            <p>From Victorian charm to sleek Mid-century modern designs, the San Francisco Bay Area boasts some of...</p>
+        </article>
+
+        <!-- Article 2 -->
+        <article class="insight-card">
+            <div class="insight-img">
+                <img src="https://placehold.co/400x260" alt="Article 2">
+            </div>
+            <div class="insight-meta">
+                <span class="insight-tag">
+                    <span class="green-dot"></span>
+                    Market Insights
+                </span>
+                <span class="insight-date">December 1, 2025</span>
+            </div>
+            <h3>Tiny Homes: Big Benefits for Sustainable Lifestyles</h3>
+            <p>Inside, the home delivers 20th century history with helpful modern glow-ups. Think pocket doors, leaded...</p>
+        </article>
+
+        <!-- Article 3 -->
+        <article class="insight-card">
+            <div class="insight-img">
+                <img src="https://placehold.co/400x260" alt="Article 3">
+            </div>
+            <div class="insight-meta">
+                <span class="insight-tag">
+                    <span class="green-dot"></span>
+                    Selling Strategies
+                </span>
+                <span class="insight-date">December 1, 2025</span>
+            </div>
+            <h3>Biophilic Architecture: Nature-Inspired Design for Living Spaces</h3>
+            <p>Open Homes isn't your average real estate photography company. Our experience shooting over...</p>
+        </article>
+
+    </div>
+</section>
+
+<section class="main-contact-section " >
+
+    <div class="contact-section animate" data-dir="up">
+
+    <!-- Left Side --> 
+    <div class="contact-left " >
+        <h2>Contact our agency</h2>
+
+        <!-- Info Grid -->
+        <div class="contact-info-grid">
+            <div class="contact-info-item">
+                <span class="info-label">24/7 Support</span>
+                <p>+1890 123 456</p>
+            </div>
+            <div class="contact-info-item">
+                <span class="info-label">Email Us</span>
+                <p>support@example.com</p>
+            </div>
+            <div class="contact-info-item">
+                <span class="info-label">Chat Support</span>
+                <a href="#" class="chat-link">Start live chat</a>
+            </div>
+            <div class="contact-info-item">
+                <span class="info-label">Opening Hour</span>
+                <p>Mon-Fri: 8am-6pm</p>
+            </div>
+        </div>
+
+        <!-- Divider -->
+        <div class="contact-divider"></div>
+
+        <!-- Book A Call -->
+        <div class="book-call">
+            <a href="#" class="book-link">Book A Call</a>
+            <p>A 30-min discovery call to see how we can help.</p>
+            <div class="agent-info">
+                <img src="https://placehold.co/50x50" alt="Morgane Polanski">
+                <div>
+                    <h4>Morgane Polanski</h4>
+                    <span>Certificate Agent</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Right Side — Form -->
+    <div class="contact-right " >
+        <div class="contact-form-card">
+            <h3>Leave Us A Message</h3>
+
+            <div class="form-group">
+                <input type="text" placeholder="Name *">
+            </div>
+            <div class="form-group">
+                <input type="email" placeholder="Email address *">
+            </div>
+            <div class="form-group">
+                <select>
+                    <option value="" disabled selected>Subject</option>
+                    <option>Property Inquiry</option>
+                    <option>General Question</option>
+                    <option>Book A Call</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <textarea placeholder="Message" rows="5"></textarea>
+            </div>
+
+            <button class="send-btn">
+                Send A Message <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </button>
+        </div>
+    </div>
+    </div>
+
+
+
+</section>
+
+<section class="last-section">
+
+<div class="marquee-section">
+    <div class="marquee-track">
+        <span>Your Real Estate Business</span>
+        <span class="marquee-star">✳</span>
+        <span>Grow Your Portfolio</span>
+        <span class="marquee-star">✳</span>
+        <span>Your Real Estate Business</span>
+        <span class="marquee-star">✳</span>
+        <span>Grow Your Portfolio</span>
+        <span class="marquee-star">✳</span>
+        <span>Your Real Estate Business</span>
+        <span class="marquee-star">✳</span>
+        <span>Grow Your Portfolio</span>
+        <span class="marquee-star">✳</span>
+    </div>
+</div>
+
+<!-- Footer -->
+<footer class="footer">
+    <div class="footer-inner">
+
+        <!-- Left — Logo + Social -->
+        <div class="footer-brand">
+            <div class="footer-logo">
+                <img src="logo-icon.png" alt="Logo">
+                <span>atamisa</span>
+            </div>
+            <p class="follow-label">Follow Us:</p>
+            <div class="social-links">
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-pinterest-p"></i></a>
+            </div>
+            <p class="copyright">Copyright © 2026 <strong>Atamisa</strong>. All rights reserved</p>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="footer-col">
+            <h4><span class="green-square"></span> Quick Links</h4>
+            <ul>
+                <li><a href="#">Overview</a></li>
+                <li><a href="#">Features</a></li>
+                <li><a href="#">Solutions</a></li>
+                <li><a href="#">Tutorials</a></li>
+                <li><a href="#">Pricing</a></li>
+            </ul>
+        </div>
+
+        <!-- Company -->
+        <div class="footer-col">
+            <h4><span class="green-square"></span> Company</h4>
+            <ul>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Careers</a></li>
+                <li><a href="#">News</a></li>
+                <li><a href="#">Media Kit</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+
+        <!-- Resources -->
+        <div class="footer-col">
+            <h4><span class="green-square"></span> Resources</h4>
+            <ul>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Help Center</a></li>
+                <li><a href="#">Tutorials</a></li>
+                <li><a href="#">Support</a></li>
+                <li><a href="#">Services</a></li>
+            </ul>
+        </div>
+
+        <!-- Collaborate -->
+        <div class="footer-col">
+            <h4><span class="green-square"></span> Collaborate</h4>
+            <ul>
+                <li><a href="#">Partners</a></li>
+                <li><a href="#">Partners Program</a></li>
+                <li><a href="#">Affiliate Program</a></li>
+                <li><a href="#">Community</a></li>
+                <li><a href="#">HR Partner Program</a></li>
+            </ul>
+        </div>
+
+    </div>
+</footer>
+</section>
+
+<!-- Scroll To Top -->
+<button class="scroll-top" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">
+    <i class="fa-solid fa-arrow-up"></i>
+</button>
+
+
+
+
+
+
+
+  
+</body>
+</html>
