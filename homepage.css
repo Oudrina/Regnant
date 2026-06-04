@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
+   
 }
 
 .homepage-header{
@@ -180,8 +181,23 @@ ul li a:hover {
 .main-class {
     width: 100%;
     height: 100vh;
+ background-image: url('https://images.pexels.com/photos/323780/pexels-photo-323780.jpeg');
+ background-position: center;
+ background-repeat: no-repeat;
+ background-size: cover;
+ position: relative;
+}
+.main-class::before {
+    content: '';
+    position: absolute;
+    inset: 0; 
+    background-color: rgba(0, 0, 0, 0.45);
+    z-index: 0;
+}
 
-    background-color: #9e9a9a;
+.main-class > * {
+    position: relative;
+    z-index: 1;
 }
 .hero{
     display: flex;
@@ -458,24 +474,30 @@ ul li a:hover {
 
 
 
+
 /* ── Stats Section ── */
-.stats-section {
-    /* width: 100%; */
-   background-color: #292a2b;
-  
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 10px;
+
+.header-project{
+   background-image: url('https://media.istockphoto.com/id/2149088667/photo/3d-rendering-of-modern-house-in-luxurious-style-in-night.jpg?b=1&s=612x612&w=0&k=20&c=opqY_YoQyFodeoVaZDfepSY42kEpyqiI2BtnXR3hD-I=');
+  height: auto;
+  background-position: center;
+ background-repeat: no-repeat;
+ background-size: cover;
+    
+  padding: 50px 50px;
+
+
+
 }
 .stats-background{
-    width: 80%;
+    /* width: 85%; */
     margin: 0 auto;
     margin-top: 80px;
+    padding: 60px 0;
 }
 
-/* Dark overlay */
+
+
 .stats-overlay {
     position: absolute;
     inset: 0;
@@ -523,10 +545,18 @@ hr {
             border: none;           
             height: 1px;           
             background-color: gray; 
-            width: 100%;             
+            width: 90%;             
             margin: 20px auto;
             margin-top: -7px;      
         }
+.stats-divide{
+    border: none;           
+            height: 1px;           
+            background-color: gray; 
+            width: 90%;             
+            margin: 20px auto;
+            margin-top: -27px;   
+}
 .green-dot {
     width: 8px;
     height: 8px;
@@ -554,14 +584,14 @@ hr {
     padding: 50px 50px;
 }
 
-/* ── Left ── */
+
 .header-left {
     display: flex;
     flex-direction: column;
     gap: 14px;
 }
 
-/* Tag */
+
 .section-tag {
     display: flex;
     align-items: center;
@@ -579,17 +609,16 @@ hr {
     flex-shrink: 0;
 }
 
-/* Heading */
 .projects-header h2 {
     font-family: 'Montserrat', sans-serif;
     font-size: clamp(32px, 4vw, 52px);
     font-weight: 600;
     color: #ffffff;
     line-height: 1.15;
-    margin: 0;
+
 }
 
-/* ── Button ── */
+
 .more-btn {
     display: flex;
     align-items: center;
@@ -609,7 +638,7 @@ hr {
     transition: color 0.3s ease;
 }
 
-/* Hover — black fill bottom to top */
+
 .more-btn::before {
     content: '';
     position: absolute;
@@ -627,18 +656,19 @@ hr {
     height: 100%;
 }
 
-/* ── Project Item ── */
+
 .project-item {
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
     cursor: pointer;
     overflow: hidden;
     padding: 40px 50px;
      transition: background-color 0.3s ease;
-     width: 100%;    
+     width: 100%; 
+     background-color: #2B2B2B; 
+     cursor: pointer;  
         
 }
 
-/* ── Header Row ── */
 .project-row {
     display: flex;
     align-items: center;
@@ -697,14 +727,13 @@ font-size: 30px;
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.5s ease, padding 0.4s ease;
+    width: 90%;
+    margin: 0 auto;
 }
 .project-row {
     cursor: pointer;
 }
 
-.project-item {
-    cursor: default; /* remove pointer from whole card */
-}
 
 .project-item.active .project-expanded {
     max-height: 500px;
@@ -723,7 +752,7 @@ font-size: 30px;
     margin-left: 30px;
 }
 
-/* Location */
+
 .project-location {
     display: flex;
     align-items: center;
@@ -783,7 +812,7 @@ font-size: 30px;
     color: #7CC42A;
 }
 
-/* Footer */
+
 .project-footer {
     display: flex;
     align-items: center;
@@ -854,15 +883,15 @@ font-size: 30px;
     gap: 14px;
 }
 
-/* Tag */
-.section-tag {
+
+/* .section-tag {
     display: flex;
     align-items: center;
     gap: 8px;
-    font-size: 12px;
+    font-size: 13px;
     font-weight: 500;
     color: #888888;
-}
+} */
 
 .green-square {
     width: 8px;
@@ -880,7 +909,7 @@ font-size: 30px;
     margin: 0;
 }
 
-/* ── Button ── */
+
 .more-btn {
     display: flex;
     align-items: center;
@@ -930,7 +959,7 @@ font-size: 30px;
 
 
 .why-img img {
-    width: 90%;
+    width: 100%;
     height: 700px;
     object-fit: cover;
     border-radius: 20px;
@@ -986,7 +1015,7 @@ font-size: 30px;
     color: #1a1a1a;
 }
 
-/* Text */
+
 .feature-text h4 {
     font-size: 21px;
     font-weight: 600;
@@ -1003,7 +1032,50 @@ font-size: 30px;
     width: 400px;
     margin-left: 10px;
 }
+/* Video Section */
+.interior-video{
+    width: 100%;
+    height: 90vh;
+    background-image: url('https://images.pexels.com/photos/14598479/pexels-photo-14598479.jpeg');
+    background-size: cover;
+    background-position: center;
+    position: relative;
 
+}
+.interior-video::before {
+  content: '';
+    position: absolute;
+    inset: 0; 
+    background-color: rgba(0, 0, 0, 0.8); 
+    z-index: 0;
+}
+.interior-video > * {
+    position: relative;
+    z-index: 1;
+}
+.interior-wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    gap: 20px;
+}
+.interior-text {
+    font-size: clamp(72px, 6vw, 86px);
+    font-weight: 600;
+    color: #ffffff;
+    line-height: 1.2;
+    margin: 0;
+}
+.interior-tag{
+ display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 13px;
+    font-weight: 700;
+    color: #fff;
+}
 /* ── Values Section ── */
 .values-section {
     background-color: #ffffff;
@@ -1028,15 +1100,7 @@ font-size: 30px;
     gap: 14px;
 }
 
-/* Tag */
-.section-tag {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    font-size: 12px;
-    font-weight: 500;
-    color: #888888;
-}
+
 
 .green-square {
     width: 8px;
@@ -1086,7 +1150,6 @@ font-size: 30px;
     font-weight: 600;
 }
 
-/* ── Tab Panels ── */
 .tab-panel {
     display: none;
 }
@@ -1095,7 +1158,6 @@ font-size: 30px;
     display: block;
 }
 
-/* ── Image Wrapper ── */
 .values-img-wrap {
     position: relative;
     border-radius: 20px;
@@ -1103,8 +1165,8 @@ font-size: 30px;
 }
 
 .values-img-wrap img {
-    width: 75%;
-    height: 550px;
+    width: 79%;
+    height: 650px;
     margin: 0 auto;
     object-fit: cover;
     display: block;
@@ -1135,7 +1197,7 @@ font-size: 30px;
     color: #7CC42A;
 }
 
-/* Card Heading */
+
 .values-card h3 {
     font-size: 20px;
     font-weight: 700;
@@ -1143,7 +1205,7 @@ font-size: 30px;
     margin: 0;
 }
 
-/* Card Description */
+
 .values-card p {
     font-size: 13px;
     color: #cccccc;
@@ -1151,7 +1213,7 @@ font-size: 30px;
     margin: 0;
 }
 
-/* Card Link */
+
 .card-link {
     display: flex;
     align-items: center;
@@ -1268,7 +1330,7 @@ font-size: 30px;
     display: flex;
 }
 
-@keyframes fadeSlide {
+/* @keyframes fadeSlide {
     from {
         opacity: 0;
         transform: translateX(30px);
@@ -1277,15 +1339,15 @@ font-size: 30px;
         opacity: 1;
         transform: translateX(0);
     }
-}
+} */
 
-/* Quote Icon */
+
 .quote-icon {
     font-size: 70px;
     color: #7CC42A;
 }
 
-/* Quote Text */
+
 .quote-text {
     font-size: clamp(23px, 2vw, 30px);
     font-weight: 600;
@@ -1585,7 +1647,7 @@ font-size: 30px;
     flex-shrink: 0;
 }
 
-/* Heading */
+
 .insights-header h2 {
     font-size: clamp(32px, 4vw, 52px);
     font-weight: 700;
@@ -1594,7 +1656,7 @@ font-size: 30px;
     margin: 0;
 }
 
-/* ── Button ── */
+
 .more-btn {
     display: flex;
     align-items: center;
@@ -1993,8 +2055,7 @@ font-size: 30px;
 }
 
 .marquee-track span {
-    font-family: 'Montserrat', sans-serif;
-    font-size: clamp(48px, 7vw, 100px);
+    font-size: clamp(38px, 7vw, 60px);
     font-weight: 800;
     color: #ffffff;
     letter-spacing: -1px;
@@ -2002,7 +2063,7 @@ font-size: 30px;
 }
 
 .marquee-star {
-    font-size: 40px ;
+    font-size: 30px ;
     color: #ffffff ;
     opacity: 0.8;
 }
@@ -2012,7 +2073,7 @@ font-size: 30px;
     100% { transform: translateX(-50%); }
 }
 
-/* ── Footer ── */
+
 .footer {
     background-color: rgba(35, 32, 28, 0.97);
     font-family: 'Montserrat', sans-serif;
@@ -2030,14 +2091,14 @@ font-size: 30px;
     align-items: start;
 }
 
-/* ── Brand Column ── */
+
 .footer-brand {
     display: flex;
     flex-direction: column;
     gap: 16px;
 }
 
-/* Logo */
+
 .footer-logo {
     display: flex;
     align-items: center;
@@ -2129,7 +2190,7 @@ font-size: 30px;
     flex-shrink: 0;
 }
 
-/* Links */
+
 .footer-col ul {
     list-style: none;
     padding: 0;
@@ -2151,7 +2212,7 @@ font-size: 30px;
     color: #7CC42A;
 }
 
-/* ── Scroll To Top ── */
+
 .scroll-top {
     position: fixed;
     bottom: 30px;
@@ -2177,7 +2238,7 @@ font-size: 30px;
     transform: translateY(-3px);
 }
 
-/* Animation Classes */
+
 .animate {
     opacity: 0;
     transition: opacity 0.8s ease, transform 0.8s ease;
