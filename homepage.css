@@ -3,6 +3,9 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
+    width: 100%;
+    height: 100%;
+    
    
 }
 
@@ -490,7 +493,6 @@ ul li a:hover {
 
 }
 .stats-background{
-    /* width: 85%; */
     margin: 0 auto;
     margin-top: 80px;
     padding: 60px 0;
@@ -1076,14 +1078,14 @@ font-size: 30px;
     font-weight: 700;
     color: #fff;
 }
-/* ── Values Section ── */
+
 .values-section {
     background-color: #ffffff;
     padding: 60px 50px;
     font-family: 'Montserrat', sans-serif;
 }
 
-/* ── Header ── */
+
 .values-header {
     display: flex;
     align-items: flex-end;
@@ -1231,7 +1233,6 @@ font-size: 30px;
 }
 
 
-/* ── Testimonial Section ── */
 .testimonial-section {
     display: grid;
     grid-template-columns: 1fr 1px 1.8fr;
@@ -1243,7 +1244,7 @@ font-size: 30px;
     height: 600px;
 }
 
-/* ── Left Side ── */
+
 .testimonial-left {
     display: flex;
     flex-direction: column;
@@ -1330,16 +1331,7 @@ font-size: 30px;
     display: flex;
 }
 
-/* @keyframes fadeSlide {
-    from {
-        opacity: 0;
-        transform: translateX(30px);
-    }
-    to {
-        opacity: 1;
-        transform: translateX(0);
-    }
-} */
+
 
 
 .quote-icon {
@@ -1857,14 +1849,14 @@ font-size: 30px;
     color: #7CC42A;
 }
 
-/* ── Divider ── */
+
 .contact-divider {
     height: 1px;
     background-color: rgba(255, 255, 255, 0.1);
     width: 100%;
 }
 
-/* ── Book A Call ── */
+
 .book-call {
     display: flex;
     flex-direction: column;
@@ -1890,7 +1882,7 @@ font-size: 30px;
     line-height: 1.6;
 }
 
-/* Agent */
+
 .agent-info {
     display: flex;
     align-items: center;
@@ -1919,11 +1911,11 @@ font-size: 30px;
     color: #888888;
 }
 
-/* ── Right Side Form Card ── */
+
 .contact-form-card {
     background-color: #333333;
     border-radius: 20px;
-    padding: 40px;
+    padding: 30px;
     display: flex;
     flex-direction: column;
     gap: 16px;
@@ -1961,12 +1953,7 @@ font-size: 30px;
     min-height: 120px;
 }
 
-.form-group select {
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 24 24' fill='none' stroke='%23aaaaaa' stroke-width='2'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");
-    background-repeat: no-repeat;
-    background-position: right 20px center;
-    padding-right: 44px;
-}
+
 
 .form-group input::placeholder,
 .form-group textarea::placeholder {
@@ -2022,15 +2009,28 @@ font-size: 30px;
 }
 
 .last-section{
-    background-color: #2b2b2b;
     padding: 70px ;
-    margin-top: 60px;
+    background-image: url('https://images.pexels.com/photos/27562213/pexels-photo-27562213.png');
+    background-size: cover 80%;
+    background-position: center;
+    background-repeat:no-repeat ;
+    position: relative;
 }
-/* ── Marquee Banner ── */
+.last-section::before {
+    content: '';
+    position: absolute;
+    inset: 0; 
+    background-color: rgba(0, 0, 0, 0.45);
+    z-index: 0;
+}
+
+.last-section > * {
+    position: relative;
+    z-index: 1;
+}
+
 .marquee-section {
     position: relative;
-    background-image: url('city.jpg');
-    background-size: cover;
     background-position: center;
     overflow: hidden;
     padding: 50px 0;
@@ -2040,7 +2040,6 @@ font-size: 30px;
     content: '';
     position: absolute;
     inset: 0;
-    /* background: rgba(0, 0, 0, 0.35); */
 }
 
 .marquee-track {
@@ -2075,10 +2074,10 @@ font-size: 30px;
 
 
 .footer {
-    background-color: rgba(35, 32, 28, 0.97);
+    background: transparent linear-gradient(180deg, rgba(35, 32, 28, 0.97) 0%, rgba(35, 32, 28, 0.9) 100%) repeat padding-box;
     font-family: 'Montserrat', sans-serif;
-    padding: 90px;
-    width: 85%;
+    padding: 120px;
+    width: 100%;
     margin: 0 auto;
     border-radius: 20px;
     
@@ -2089,6 +2088,8 @@ font-size: 30px;
     grid-template-columns: 1.4fr 1fr 1fr 1fr 1fr;
     gap: 40px;
     align-items: start;
+  
+    
 }
 
 
@@ -2106,7 +2107,7 @@ font-size: 30px;
 }
 
 .footer-logo img {
-    width: 32px;
+    width: 38px;
     filter: brightness(1.4);
 }
 
@@ -2117,22 +2118,22 @@ font-size: 30px;
     letter-spacing: 0.5px;
 }
 
-/* Follow */
+
 .follow-label {
-    font-size: 13px;
+    font-size: 14px;
     color: #aaaaaa;
     margin: 6px 0 0;
 }
 
-/* Social Icons */
+
 .social-links {
     display: flex;
     gap: 12px;
 }
 
 .social-links a {
-    width: 36px;
-    height: 36px;
+    width: 45px;
+    height: 45px;
     border-radius: 50%;
     border: 1.5px solid rgba(255,255,255,0.15);
     display: flex;
@@ -2149,31 +2150,30 @@ font-size: 30px;
     border-color: #7CC42A;
 }
 
-/* Copyright */
+
 .copyright {
     font-size: 12px;
-    color: #666666;
+    color: #c7c6c6;
     margin: 10px 0 0;
     line-height: 1.6;
 }
 
 .copyright strong {
-    color: #aaaaaa;
+    color: #c7c6c6;
 }
 
-/* ── Footer Columns ── */
 .footer-col {
     display: flex;
     flex-direction: column;
     gap: 16px;
 }
 
-/* Column Heading */
+
 .footer-col h4 {
     display: flex;
     align-items: center;
     gap: 8px;
-    font-size: 11px;
+    font-size: 16px;
     font-weight: 700;
     color: #ffffff;
     text-transform: uppercase;
@@ -2197,13 +2197,13 @@ font-size: 30px;
     margin: 0;
     display: flex;
     flex-direction: column;
-    gap: 12px;
+    gap: 16px;
 }
 
 .footer-col ul li a {
-    font-size: 13px;
+    font-size: 15px;
     font-weight: 400;
-    color: #aaaaaa;
+    color: white;
     text-decoration: none;
     transition: color 0.3s ease;
 }
