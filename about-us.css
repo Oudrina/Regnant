@@ -1,0 +1,328 @@
+.about-us-main-wrapper{
+    margin-top: -150px;
+}
+.contact-sub-heading{
+    display:flex;
+    flex-direction:column;
+}
+.about-us-sub-info{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+    margin-top: 80px;
+}
+
+.about-section {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    max-width: 1300px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    margin-top: 50px;
+  }
+  .about-image {
+    flex: 1 1 420px;
+    min-width: 320px;
+  }
+  .about-image img {
+    width: 100%;
+    height: 500px;
+    display: block;
+    border-radius: 1px;
+    filter: grayscale(100%) contrast(1.05);
+  }
+  .about-content {
+    flex: 1 1 480px;
+    min-width: 320px;
+  }
+  .eyebrow {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  .eyebrow .dot {
+    width: 8px;
+    height: 8px;
+    background: #7CC42A;
+    border-radius: 50%;
+    display: inline-block;
+  }
+  .eyebrow span {
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    color: #a8a8a8;
+    font-weight: 500;
+  }
+  h1 {
+    font-size: 62px;
+    font-weight: 600;
+    line-height: 1.2;
+    color: #212121;
+    margin-bottom: 36px;
+    letter-spacing: -1px;
+  }
+  .about-footer {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 24px;
+    flex-wrap: wrap;
+  }
+  .about-footer p {
+    font-size: 15px;
+    line-height: 1.7;
+    color: #b5b5b5;
+    text-align: right;
+    max-width: 320px;
+  }
+  .arrow-btn {
+    flex-shrink: 0;
+    width: 56px;
+    height: 56px;
+    background: #b6ff3c;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    transition: transform 0.3s ease, background 0.3s ease;
+  }
+  .arrow-btn:hover {
+    transform: scale(1.1) rotate(8deg);
+    background: #c8ff5e;
+  }
+  .arrow-btn svg {
+    width: 22px;
+    height: 22px;
+    stroke: #0b0c0e;
+    stroke-width: 2.5;
+  }
+  .about-marquee  .marquee-track span{
+    font-size: 6.9rem;
+    font-weight: 600;
+     color:rgb(190, 188, 188);
+     cursor: pointer;
+  }
+   .about-marquee  .marquee-track span:hover{
+     color:black;
+  }
+ .about-information-services{
+    background-color:#212121;
+    padding: 80px ;
+ }
+ .about-information-main-wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items:end;
+    gap: 60px;
+    max-width: 1300px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+ }
+ .about-headerline{
+    display: flex;
+    gap: 20px;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: end;
+    margin-bottom: 20px;
+ }
+ .about-information-heading{
+    font-size: 16px;
+    color: white;
+    font-size: 500;
+ }
+ .our-service-header{
+    font-size: 70px;
+    line-height: 1.1;
+    color: white;
+ }
+ .our-service-link a{
+    background-color: #7CC42A;
+    padding: 15px 50px;
+    border-radius: 50px;
+     color: black;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    transition: all ease .4s;
+ }
+ 
+ .our-service-link a:hover{
+    background-color: #0b0c0e;
+    color: #b6ff3c;
+ }
+ .service-section{
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+    border-bottom: 1px solid rgb(139, 137, 137);;
+    padding: 60px 0;
+
+
+ }
+.about-information-main-wrapper{
+    border-bottom: 1px solid rgb(139, 137, 137);;
+    padding-bottom: 50px;
+}
+.service-description{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    gap: 20px;
+
+}
+.service-description p:nth-child(1){
+    font-size: 25px;
+    color: white;
+}
+.service-description p:nth-child(2){
+    font-size: 43px;
+    color: white;
+    font-weight: 500;
+}
+.service-description p:hover{
+    color: #7CC42A;
+    cursor: pointer;
+}
+.description-details{
+    width: 400px;
+    color: ghostwhite;
+    font-size: 17px;
+}
+.about-us-background-image{
+    background-image: url("https://images.pexels.com/photos/14615702/pexels-photo-14615702.png");
+    background-size: cover 20%;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    
+}
+.about-us-background-image::before {
+    content: '';
+    position: absolute;
+    inset: 0; 
+    background-color: rgba(0, 0, 0, 0.45);
+    z-index: 0;
+}
+
+.about-us-background-image > * {
+    position: relative;
+    z-index: 1;
+}
+.about-background-main-wrapper{
+    display: flex;
+    justify-content: space-around;
+    padding: 40px;
+}
+.our-service-heading{
+    font-size: 3.9rem;
+    font-weight: 600;
+    color: white;
+}
+.our-services{
+    width: 780px;
+    text-wrap: wrap;
+    
+}
+.about-us-three-box{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-content: baseline;
+    margin-top: 150px;
+  
+    
+}
+.about-us-three-box .column-1{
+    
+    background: transparent linear-gradient(180deg, rgba(22, 12, 1, 0.97) 0%, rgba(48, 29, 5, 0.9) 100%) repeat padding-box;
+    
+    border-radius: 20px;
+    height: 250px;
+    width: 430px;
+}
+.about-head-square{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: center;
+    padding: 40px 40px;
+    gap: 10px;
+}
+hr{
+ border: 1px solid rgb(139, 137, 137);;
+
+}
+.coulmn-count{
+    font-size: 5rem;
+    color: white;
+    font-weight: 600;
+    margin-left: 20px;
+}
+.main-details-about-the-company{
+    display: flex;
+    justify-content: space-between;
+    padding: 40px;
+    gap: 20px;
+
+}
+.main-description-infos{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+.main-description-info{
+    width: 600px;
+    padding: 20px 40px;
+    border: 1px solid gainsboro;
+    border-radius: 20px;
+}
+.main-description-sub-info{
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    align-content: center;
+    gap: 20px;
+}
+.main-description-sub-info .number{
+    font-size: 19px;
+    font-weight: 500;
+    background-color: #c8ff5e;
+    padding: 6px 20px;
+    border-radius: 20px;
+    
+   
+    text-align: center;
+}
+h4{
+    font-size: 30px;
+    margin-bottom: 20px;
+    font-weight: 400;
+}
+.info-header p{
+    font-size: 18px;
+    color: #a8a8a8;
+}
+.main-description h2{
+    font-size: 4rem;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+.main-description p{
+    font-size: 18px;
+    margin-bottom: 60px;
+    color: #6b6a6a;
+}
+  @media (max-width: 768px) {
+    h1 { font-size: 36px; }
+    .about-footer { justify-content: flex-start; }
+    .about-footer p { text-align: left; max-width: 100%; }
+  }
