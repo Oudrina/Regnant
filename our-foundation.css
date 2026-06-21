@@ -1,0 +1,72 @@
+.contact-main-wrapper{
+    width: 100%;
+    height: 80vh;
+    background-position: center 80%;
+    background-size: cover 30%;
+    background-repeat: no-repeat;
+    background-image: url(https://content.pexels.com/aigc-bundle/images/ed4dbec4-262f-462c-98dd-18e253e886c7.jpg);
+    position: relative;
+
+}
+.main-header-wrapper{
+    margin-top: 3em;
+    margin-bottom: 5em;
+    padding: 40px;
+}
+.main-header-wrapper h4{
+    text-align: center;
+    font-size: 5rem;
+    font-weight: 600;
+}
+.main-header-wrapper p {
+    font-size: 30px;
+    color: #383838;
+    font-weight: 450;
+    padding: 40px;
+}
+.section-main-wraper{
+    margin-bottom: 2rem;
+}
+.section-main-wraper h3{
+    text-align: center;
+    font-size: 3.5rem;
+    margin-bottom: 2em;
+}
+.main-wrapper-images{
+    display: grid;
+    gap: 20px;
+}
+.image-section-main{
+    display: flex;
+    justify-content: center;
+    width: 75%;
+    margin: 0 auto;
+    gap: 20px;
+}
+.image-section-main img{
+    border-radius: 20px;
+    width: 500px;
+}
+.page-description{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+.page-description .page-header{
+    font-size: 45px;
+    font-weight: 600;
+    color: #88db21;
+}
+  .page-description .page-description{
+    font-size: 30px;
+    font-weight: 400;
+}
+.donate-to-us{
+    text-align: center;
+    font-size: 4rem;
+    color: #4b7e0d;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: 3em;
+    margin-top: 3rem;
+}
